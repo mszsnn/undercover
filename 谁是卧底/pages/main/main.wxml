@@ -1,0 +1,11 @@
+<view class='container'>
+   <view class='tap'>
+      <view class='top'>option</view>
+      <view class='list tab1'>玩家人数</view>
+      <slider max='{{person.max}}' min='{{person.min}}' bindchange='changePerson' show-value backgroundColor='#8a5142'></slider>
+      <view class='list tab2'>卧底人数</view>
+      <slider max='{{wodi.max}}' min='{{wodi.min}}' bindchange='changeWodi'  show-value backgroundColor='#8a5142'></slider>
+      <view class='begin' bindtap='start'>开始游戏</view>
+      
+   </view> 
+</view>

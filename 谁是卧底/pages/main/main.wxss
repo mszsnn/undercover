@@ -1,0 +1,65 @@
+.img{
+  width:100%;
+  height:100%;
+}
+
+.tap{
+  width:750rpx;
+  height:753rpx;
+  background-image: url('http://192.169.1.149/game/container.png');
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  margin:0 auto;
+  position: relative;
+  margin-top: 250rpx;
+  box-sizing: border-box;
+  padding:80rpx 100rpx;
+}
+.top{
+  width:445rpx;
+  height:127rpx;
+  position: absolute;
+  left:50%;
+  top:-90rpx;
+  margin-left:-223rpx;
+  background-image: url('http://192.169.1.149/game/huang.png');
+  background-size: 100%; 
+  font-family: ms;
+  font-size: 60rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 127rpx;
+}
+.list{
+  width: 285rpx;
+  height:94rpx;
+  background-size: cover; 
+  text-align: center;
+  line-height: 94rpx;
+  font-family: cms;
+  font-size: 40rpx;
+  color: #8a5142;
+  margin-top: 50rpx;
+}
+.tab1{
+  background-image: url('http://192.169.1.149/game/tab2.png');
+}
+.tab2{
+  background-image: url('http://192.169.1.149/game/tab1.png');
+}
+.begin{
+  width:271rpx;
+  height:74rpx;
+  background-image: url('http://192.169.1.149/game/begin.png');
+  background-size: 100%;
+  position: absolute;
+  bottom:40rpx;
+  left:50%;
+  margin-left: -135rpx;
+  font-family: cms;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 74rpx;
+  color: #fff;
+}

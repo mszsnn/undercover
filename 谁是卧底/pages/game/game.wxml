@@ -1,0 +1,49 @@
+<!--pages/game/game.wxml-->
+<view class='container'>
+   <view class='ul'>
+        <view src='{{item.src}}' wx:key='item.id'  class='li'  wx:for="{{arr}}">  
+        <view class='black' wx:if="{{item.status}}">{{item.position? "冤死":'卧底'}}</view>
+            <image src='{{item.src}}' id='{{item.id}}' mode="widthFix" class='liimg'  bindtap='check'></image> 
+        </view> 
+   </view> 
+   <view class='hidden' wx:if='{{zhezhao}}'>
+
+
+
+
+    <view class='toggle'  bindtap='showPai' wx:if="{{toggle}}">
+      <view>请<text>{{current+1}}</text>号选手</view>
+      <view>翻牌</view>
+    </view>
+    <view class='tap' wx:else >
+        <view class='top'>message</view>
+        <camera device-position="front" flash="off" binderror="error"></camera> 
+        <view class='mess'>{{arr[current].word}}</view>
+        <text class='t'>请牢记好您的词语</text>
+        <view class='begin' bindtap='lookEnd'>我拍好了</view>
+    </view>    
+   </view>
+   <view  class='alert' wx:if='{{alert}}'>
+      <view class='img'>
+          <view  class='mes'>
+              您确定此玩家是卧底嘛？
+          </view>
+          <view class='but'>
+              <view class='btn no' bindtap='no'>NO</view>
+              <view class='btn yes' bindtap='yes'>YES</view>
+          </view>
+      </view>
+   </view>
+   <view class='win' wx:if="{{over}}">
+      <view class='wininner'>
+          <view class='m'>
+            {{win}}
+          </view>
+          <view class='button'>
+              <view class='close' bindtap='gameover'>CLOSE</view>
+              <view class='next' bindtap='restart'>NEXT</view>
+          </view>
+      </view>
+   </view>
+</view>
+

@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <image src='/utils/img/img.png' class='logo' mode='aspectFill'></image>
+   <button class='begin' type='primary' bindtap='beginGame'> 
+      开始游戏
+   </button> 
+</view>
